@@ -10,14 +10,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="photo">
-            <img src="Моё фото.png" alt="Здесь моё фото:)" class="avatar">
-        </div>
-        <div class="card begin color">
-            <h1>Рафаэль Мишиев</h1>
-            <p> Привет! Меня зовут <strong>Рафаэль</strong>, и я очень сильно хочу <strong> стать IT разработчиком</strong>.
-                Я приложу все свои <strong>силы</strong>, чтобы достичь своих <strong>целий</strong>!</p>
-            <p><em>Мне очень нравится заниматься программированием!</em></p>
+        <div class="info">
+            <div class="photo">
+                <img src="Моё фото.png" alt="Здесь моё фото:)" class="avatar">
+            </div>
+            <div class="begin color">
+                <h1>Рафаэль Мишиев</h1>
+                <p class="p1"> Привет! Меня зовут <strong>Рафаэль</strong>, и я очень сильно хочу <strong> стать IT разработчиком</strong>. <br>
+                    Я приложу все свои <strong>силы</strong>, чтобы достичь своих <strong>целий</strong>!</p>
+                <p class="p2"><em>Мне очень нравится заниматься программированием!</em></p>
+            </div>
         </div>
         <hr>
         <div class="card table1 color1">
@@ -56,19 +58,20 @@
         </div>
         <hr>
         <div class="card color3 connect">
-            <h2>Связаться со мной</h2>
-            <form>
-            <div>
-                <label for="text"><strong>Ваше имя:</strong></label>
-                <input type="text" id="text" placeholder="Введите имя">
-            </div>
-            <div>
-                <label for="email"><strong>Ваш email:</strong></label>
-                <input type="email" id="email" placeholder="Введите email">
-            </div>
-            <div>
+            <form class="form">
+                <h2>Связаться со мной</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="text"><strong>Ваше имя:</strong></label>
+                        <input type="text" id="text" placeholder="Введите имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><strong>Ваш email:</strong></label>
+                        <input type="email" id="email" placeholder="Введите email">
+                    </div>
+                </div>
+            <div class="form-group">
                 <label for="message"><strong>Ваше сообщение:</strong></label>
-                <br>
                 <textarea name="Сообщение" id="message" cols="20" rows="5" placeholder="Введите сообщение..." value=""></textarea>
             </div>
             <input type="submit" value="Отправить!" class="btn">
